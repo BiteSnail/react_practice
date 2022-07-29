@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Info from "./info";
+import Counter from './Counter';
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -12,6 +13,7 @@ const App = () => {
         </button>
         <hr />
         {visible && <Info/>}
+        {visible && <Counter></Counter>}
       </div>
     );
 };
