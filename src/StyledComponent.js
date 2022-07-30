@@ -4,6 +4,14 @@ const Box = styled.div`
     background: ${props => props.color || 'blue'};
     padding: 1rem;
     display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    @media (max-width: 1024px){
+        width: 768px;
+    }
+    @media (max_width: 768px){
+        width: 100%;   
+    }
 `;
 
 const Button = styled.button`
@@ -12,7 +20,7 @@ const Button = styled.button`
     border-radius: 4px;
     padding: 0.5rem;
     display: flex;
-    align-itmes: center;
+    align-items: center;
     box-sizing: border-box;
     font-size: 1rem;
     font-weight: 600;
