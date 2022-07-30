@@ -45,15 +45,5 @@
     "prettier": "^2.7.1"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BiteSnail/react_practice.git"
-  },
-  "author": "bitesnail",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BiteSnail/react_practice/issues"
-  },
-  "homepage": "https://github.com/BiteSnail/react_practice#readme"
+  "main": "index.js"
 }
