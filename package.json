@@ -41,6 +41,19 @@
   "devDependencies": {
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
     "prettier": "^2.7.1"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BiteSnail/react_practice.git"
+  },
+  "author": "bitesnail",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BiteSnail/react_practice/issues"
+  },
+  "homepage": "https://github.com/BiteSnail/react_practice#readme"
 }
