@@ -1,0 +1,28 @@
+.screen_out{
+    display: none;
+}
+
+.txt_info{
+    line-height: 20px;
+    display: inline;
+}
+
+.txt_g{
+    font-size: 12px;
+    line-height: 18px;
+    height: 18px;
+    width: 48px;
+    display: block;
+    cursor: pointer;
+}
+
+.num_count{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    height: 30px;
+    width: 48px;
+    margin: 0 0 0 0;
+    display: block;
+    cursor: pointer;
+}

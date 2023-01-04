@@ -1,0 +1,47 @@
+.post_item{
+    width: 320px;
+    height: 450px;
+    display: inline-block;
+}
+
+.preview_img{
+    height: 320px;
+    width: 320px;
+    display: block;
+}
+
+.post_title{
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    text-align: left;
+
+    position: #333333;
+    height: 26px;
+    width: 320px;
+    max-height: 60px;
+    display: block;
+}
+
+.post_preview{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+    color: #959595;
+    height: 63px;
+    width: 320px;
+    max-height: 68px;
+    display: block;
+}
+
+.post_date{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    color: #959595;
+
+    height: 18px;
+    width: 68px;
+    display: block;
+}
