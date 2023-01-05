@@ -1,0 +1,13 @@
+.naviBar{
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.menu{
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: #F3F3F3;
+}

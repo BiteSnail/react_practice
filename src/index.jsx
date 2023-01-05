@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { Articles } from './Articles';
 import { Header } from './Header';
+import { Routes } from 'react-router-dom';
+import { NavBar } from './NavBar';
+import { Info } from './Info';
+import { Magagine } from './Magagine';
 
 const user = {
   username:"박정현",
   userImgPath:"https://avatars.githubusercontent.com/u/55152597?v=4",
+  birth:"2000-07-04"
 }
 
 const items = [
@@ -32,10 +38,18 @@ const items = [
 
 ReactDOM.render((
   <React.StrictMode>
-    <Header user={user}/>
-    <main class="mainArc">
-      <Articles items={items}/>
-    </main>
+    <BrowserRouter>
+      <Header user={user}/>
+        <main class="mainArc">
+          <NavBar/>
+        <Routes>
+          <Route path="/" element={<Articles items={items}/>}></Route>
+          <Route path="/info" element={<Info user={user}/>}/>
+          <Route path="/magagine" element={<Magagine/>}/>
+          <Route path="/*" element={<h1>Not Found</h1>}/>
+        </Routes>
+        </main>
+    </BrowserRouter>
   </React.StrictMode>)
 ,document.getElementById('root')
 );
