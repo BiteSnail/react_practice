@@ -1,13 +1,13 @@
 import React from "react";
 import { PostItem } from "./PostItem";
-import "./Articles.css";
+import Row from 'react-bootstrap/Row';
 
 export const Articles = (props) => { 
     return (
-        <div className="wrap_articles">
+        <Row xs={1} md={2} className="g-4">
             {props.items.map((item)=>{
                 return <PostItem item={item}/>
             })}
-        </div>
+        </Row>
     )
 }

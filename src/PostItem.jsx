@@ -1,13 +1,21 @@
 import React from "react";
-import "./PostItem.css";
+import { Col } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 export const PostItem = (props) => {
     return (
-        <div className="post_item">
-            <img className="preview_img" src={props.item.src} alt="없는 사진"/>
-            <h1 className="post_title">{props.item.title}</h1>
-            <span className='post_preview'>{props.item.preview}</span>
-            <span className="post_date">{props.item.createDate}</span>
-        </div>
+        <Col>
+            <Card>
+                <Card.Img height="320px" variant="top" src={props.item.src}/>
+                <Card.Body>
+                    <Card.Title>{props.item.title}</Card.Title>
+                    <Card.Text>
+                    {props.item.preview}
+                    </Card.Text>
+                    <Button variant="primary">페이지로 이동</Button>
+                </Card.Body>
+            </Card>
+        </Col>
     );
 }

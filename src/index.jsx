@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Articles } from './Articles';
-import { Header } from './Header';
 import { Routes } from 'react-router-dom';
-import { NavBar } from './NavBar';
-import { Info } from './Info';
-import { Magagine } from './Magagine';
+import { MainPage } from './MainPage';
 
 const user = {
   username:"박정현",
   userImgPath:"https://avatars.githubusercontent.com/u/55152597?v=4",
-  birth:"2000-07-04"
+  birth:"2000-07-04",
+  introduce: "백엔드 프로그래머를 지향하고 있는 충북대학교 학생입니다.",
+  tag: ["IT", "백엔드", "학생", "COSMIC"]
 }
 
 const items = [
@@ -39,16 +37,10 @@ const items = [
 ReactDOM.render((
   <React.StrictMode>
     <BrowserRouter>
-      <Header user={user}/>
-        <main class="mainArc">
-          <NavBar/>
         <Routes>
-          <Route path="/" element={<Articles items={items}/>}></Route>
-          <Route path="/info" element={<Info user={user}/>}/>
-          <Route path="/magagine" element={<Magagine/>}/>
+          <Route path="/" element={<MainPage items={items} user={user}/>}></Route>
           <Route path="/*" element={<h1>Not Found</h1>}/>
         </Routes>
-        </main>
     </BrowserRouter>
   </React.StrictMode>)
 ,document.getElementById('root')

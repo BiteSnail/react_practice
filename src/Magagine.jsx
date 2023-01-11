@@ -1,7 +1,18 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import {Col } from "react-bootstrap";
 
 export const Magagine = (props) => {
     return (
-        <h1>개발 중입니다.</h1>
+        <Col>
+            <Card>
+                <Card.Img height="320px" variant="top" src={props.item.url}/>
+                <Card.Body>
+                    <Card.Text>
+                    {props.item.text}
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Col>
     )
 }
